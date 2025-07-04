@@ -376,7 +376,6 @@ function animate(time) {
     controls.update();
     renderer.render(scene, camera);
 }
-
 function planetRevolver(time, speed, planet, orbitRadius) {
     const planetAngle = time * 0.001 * speed;
     planet.position.x = planet_sun.position.x + orbitRadius * Math.cos(planetAngle);
